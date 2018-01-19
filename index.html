@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>포트폴리오</title>
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/animation.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+</head>
+
+<body>
+<section id="intro">
+    <div class="container">
+        <h1 id="logo" class="animate"><img src="images/intro_logo.jpg"></h1>
+    </div>
+    <div id="intro-copy"><img src="images/arrow.png" alt="arrow" class="pulse"><p>Scroll down</p></div>
+</section>
+<section id="about">
+    <div class="container wrap">
+       <h2 class="title">ABOUT ME</h2>
+       <p class="text">A small introduction about my self</p>
+       <div class="copy">
+          <div class="left">
+              <h3>Web Publisher</h3>
+              <p></p>
+              <ul class="skill_list">
+                   <li><i class="fa fa-check-square"></i><span>HTML/XHTML에 능숙</span></li>
+                   <li><i class="fa fa-check-square"></i><span>CSS2/CSS3 능숙</span></li>
+                   <li><i class="fa fa-check-square"></i><span>웹표준에 대한 이해</span></li>
+                   <li><i class="fa fa-check-square"></i><span>최신 웹 기술과 반응형 웹 제작</span></li>
+                   <li><i class="fa fa-check-square"></i><span>제이쿼리, 제이쿼리 라이브러리에 대한 기본 지식</span></li>
+              </ul>
+           </div> 
+           <div class="right"><img src="images/overview_img.png" alt=""></div>
+       </div>
+    </div>
+</section>
+<section id="portfolio">
+    <div class="container">
+        <h2 class="title">PORTFOLIO</h2>
+        <p class="text">Portfolio of my latest works</p>
+        <article id="work01" class="work-item">
+                <figure class="work_figure">
+                   <figcaption class="work_caption">
+                        <h3 class="work_title"><span class="number">01</span>구로구청 사이트 리뉴얼</h3>
+                        <div class="description">
+                            <p>구로구청 사이트의 메인 페이지를 웹표준 및 크로스부라우징으로 반응형 구조로 리뉴얼해 보았습니다.</p> 
+                            <p>분석도구로는 k-wah4.0, Colour_Contrast_Analyser, firefox부가도구(web developer, firebug, html validator)를 사용하였으며 접근성을 강화하기 위해 최대 IE7까지 맞춰보았습니다. 또 이용빈도가 높은 콘텐츠를 주 메뉴로 메인화면에 배치하였고 화면이 한눈에 정렬되는 반응형 웹 시스템을 도입하여 편리하게 이용할 수 있도록 제작을 해보았습니다.</p><p> 메인컬러는 '블루'컬러와 그 외에 CI컬러와 맞춰 깔끔하면서도 단순하지 않게 다양한 컬러를 지정하였으며 분위기가 무겁지 않게 일러스트 아이콘을 사용하여 귀엽고 한눈에 볼수 있어 사용자가 콘텐츠를 좀 더 빠르게 접근할거 같아 텍스트보단 이미지로 작업하였습니다.</p>
+                        </div>
+                        <div class="ui_group">
+                            <a href="http://www.guro.go.kr/www/NR_index.do" target="_blank" class="ui_button"><span>원본</span></a>
+                            <a href="http://webcoding.dothome.co.kr/01/index.html" target="_blank" class="ui_button"><span>리뉴얼</span></a>
+                        </div>
+                    </figcaption>
+                    <div class="work_consitst">
+                        <ul class="work_spec">
+                                <li><strong>Type</strong><span>반응형</span></li>
+                                <li><strong>IE test</strong><span>IE8 +</span></li>
+                                <li><strong>Color</strong><span>BLUE</span></li>
+                        </ul>
+                    </div>
+                </figure>
+                <div class="work_img">
+                        <img class="work_img_thumb" src="images/work01_img.png" alt="구로구청 메인 페이지">
+                </div>
+                <table class="work_table">
+                    <thead>
+                        <tr>
+                            <th>Language</th>
+                            <th>Source</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="tag html">HTML</span></td>
+                            <td><a href="https://github.com/mint-web/portfolio01/blob/master/index.html" target="_blank">index.html</a></td>
+                            <td>html5/semantic tag, web accessibility, W3C</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag css">CSS</span></td>
+                            <td><a href="https://github.com/mint-web/portfolio01/blob/master/css/common.css" target="_blank">common.css,</a> <a href="https://github.com/mint-web/portfolio01/blob/master/css/main_layout.css" target="_blank">main_layout.css</a></td>
+                            <td>css3, responsive/1024/800/640/480, media query</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag js">JS</span></td>
+                            <td><a href="https://github.com/mint-web/portfolio01/blob/master/js/common.js" target="_blank">common.js</a> <a href="https://github.com/mint-web/portfolio01/blob/master/js/main.js" target="_blank">main.js</a></td>
+                            <td>jquery이용한 navigation, mouseover, focus기능, accordion, tab기능</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </div>
+</section>
+<section id="work02">
+    <div class="container">
+        <article id="work02" class="work-item">
+                <figure class="work_figure">
+                   <figcaption class="work_caption">
+                        <h3 class="work_title"><span class="number">02</span>경기문화포털 메인 리뉴얼</h3>
+                        <div class="description">
+                            <p>경기문화포털사이트의 메인페이지를 부트스트랩4를 기반으로 반응형 구조로 메인페이지를 리뉴얼해 보았습니다.</p>
+                            <p>부트스트랩 4 beta 버전으로 제작되었고 jquery UI와 이미지 슬라이드(silck plugin)커스터 마이징하여 좀 더 빠르게 제작할 수 있었습니다. 메인페이지에 사용한 로고 및 아이콘은 svg벡터 기반으로 사용해서 다양한 기기에서도 깨지지 않게 사용하였습니다.</p>
+                        </div>
+                        <div class="ui_group">
+                            <a href="http://www.ggcf.or.kr" target="_blank" class="ui_button"><span>원본</span></a>
+                            <a href="http://webcoding.dothome.co.kr/02/index.html" target="_blank" class="ui_button"><span>리뉴얼</span></a>
+                        </div>
+                    </figcaption>
+                    <div class="work_consitst">
+                        <ul class="work_spec">
+                                <li><strong>Type</strong><span>반응형</span></li>
+                                <li><strong>IE test</strong><span>IE8 +</span></li>
+                                <li><strong>Color</strong><span>gray</span></li>
+                        </ul>
+                    </div>
+                </figure>
+                <div class="work_img">
+                        <img class="work_img_thumb" src="images/work02_img.png" alt="경기문화포털 메인 페이지">
+                </div>
+                <table class="work_table">
+                    <thead>
+                        <tr>
+                            <th>Language</th>
+                            <th>Source</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="tag html">HTML</span></td>
+                            <td><a href="https://github.com/mint-web/portfolio02/blob/master/index.html" target="_blank">index.html</a></td>
+                            <td>html5, svg</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag css">CSS</span></td>
+                            <td><a href="https://github.com/mint-web/portfolio02/blob/master/css/style.css" target="_blank">style.css</a></td>
+                            <td>css3, responsive, bootstrap4</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag js">JS</span></td>
+                            <td><a href="https://github.com/mint-web/portfolio02/blob/master/js/main.js" target="_blank">main.js</a></td>
+                            <td>jquery-UI, dropmenu, slick plugin</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </div>
+</section>
+<section id="work03">
+    <div class="container">
+        <article id="work03" class="work-item">
+                <figure class="work_figure">
+                   <figcaption class="work_caption">
+                        <h3 class="work_title"><span class="number">03</span>모바일 영화정보 페이지</h3>
+                        <div class="description">
+                            <p>영화 정보 및 예매사이트를 모바일 전용으로 제작해 보았습니다.</p>
+                            <p>영화 목록 페이지, 영화 정보 페이지, 티켓 예매 페이지 3가지 페이지를 제작해 보았고, 기기별 기본 UX를 최대한 유지하기 위해 검색상자나 선택상자 등은 네이티브 형식을 사용했으며 별점주기, 유튜브의 영상 불러오기, 날짜 선택 등의 기능이 추가돼 있습니다.</p>
+                        </div>
+                        <div class="ui_group">
+                            <a href="http://webcoding.dothome.co.kr/03/index.html" target="_blank" class="ui_button"><span>목록페이지</span></a>
+                            <a href="http://webcoding.dothome.co.kr/03/info.html" target="_blank" class="ui_button"><span>정보페이지</span></a>
+                            <a href="http://webcoding.dothome.co.kr/03/order.html" target="_blank" class="ui_button"><span>주문페이지</span></a>
+                        </div>
+                    </figcaption>
+                    <div class="work_consitst">
+                        <ul class="work_spec">
+                                <li><strong>Type</strong><span>모바일</span></li>
+                                <li><strong>Color</strong><span>dark navy, yellow</span></li>
+                        </ul>
+                    </div>
+                </figure>
+                <div class="work_img">
+                        <img class="work_img_thumb" src="images/work03_img.png" alt="영화 ui 페이지">
+                </div>
+                <table class="work_table">
+                    <thead>
+                        <tr>
+                            <th>Language</th>
+                            <th>Source</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="tag html">HTML</span></td>
+                            <td><a href="https://github.com/mint-web/portfolio03/blob/master/index.html" target="_blank">index.html</a>, <a href="https://github.com/mint-web/portfolio03/blob/master/info.html" target="_blank">info.html</a>, <a href="https://github.com/mint-web/portfolio03/blob/master/order.html" target="_blank">order.html</a></td>
+                            <td>html5</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag css">CSS</span></td>
+                            <td><a href="https://github.com/mint-web/portfolio03/blob/master/css/style.css" target="_blank">style.css</a></td>
+                            <td>css3</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag js">JS</span></td>
+                            <td><a href="https://github.com/mint-web/portfolio03/blob/master/js/common.js" target="_blank">common.js</a> <a href="https://github.com/mint-web/portfolio03/blob/master/js/order.js" target="_blank">order.js</a></td>
+                            <td>starRate.js, dhtmlxcalendar.js, order.js</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </div>
+</section>
+<section id="work04">
+    <div class="container">
+        <h4>CONTACT DETAILS</h4>
+        <p><i class="fa fa-map-marker" aria-hidden="true"></i>Gwangmyeong 2-dong, Gwangmyeong-si, Gyeonggi-do, Korea
+        <p><i class="fa fa-phone" aria-hidden="true"></i>010 9614 1278</p>
+        <p><i class="fa fa-envelope-o" aria-hidden="true"></i>rlfalsk0301@naver.com</p>
+        <p><i class="fa fa-link" aria-hidden="true"></i>webcoding.dothome.co.kr</p>
+    </div>
+</section>
+<footer id="footer">
+    <div class="container">
+     Copyright 2017. webcoding all rights reserved.
+    </div>
+</footer>
+<script src="js/common.js"></script>
+</body>
+</html>
