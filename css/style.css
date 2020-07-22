@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Play:400,700');
+
+/* Reset */
+html,body{margin:0;padding:0;width:100%;min-width:320px;height:100%}
+body,div,section,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button,figure{margin:0;padding:0;box-sizing:border-box}
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes:none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+img,input,select,textarea,button {vertical-align:middle;}
+body{background:#fff;overflow-y:scroll;*overflow-y:; -webkit-text-size-adjust:none}
+body,th,td,input,select,textarea,button,pre{font-weight:300;font-size:18px;line-height:1.5;font-family:'Noto Sans KR', sans-serif; color:#555}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+a{box-sizing:border-box; text-decoration:none;font-weight:300;font-size:18px;color:#555;transition:.3s all linear}
+a:active, a:hover {text-decoration:none}
+:focus{outline:0}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+table{table-layout:fixed;border-collapse:collapse;border-spacing:0}
+caption{text-align:left}
+fieldset{border:0 none}
+hr{display:none}
+abbr,acronym{border:0 none}
+abbr[title], dfn[title] {border-bottom:1px dotted #000000;cursor: help}
+em{font-style:normal}
+
+/* Common */
+.hidden{width:0; height:0; margin:0; padding:0; text-indent:-9999em; overflow:hidden; line-height:0; font-size:0;}
+.info-table {table-layout: fixed;width: 100%}
+.info-table th {font-weight: 400;color: #333}
+.info-table th, .info-table td {padding-top: 30px;text-align: left;vertical-align: top;line-height: 1.3;word-break: keep-all}
+.info-table tr:first-child th, .info-table tr:first-child td {padding-top: 0}
+.info-table li {position: relative;padding-left: 15px;margin-top: 5px;line-height: 1.3}
+.info-table li:first-child {margin-top: 0}
+.info-table li:before {position: absolute;top: 13px;left: 0;display: inline-block;width: 5px;height: 1px;background: #555;content: ""}
+/* header */
+#header {position: absolute;z-index: 10;width: 100%;height: 60px;padding: 0 20px;box-sizing: border-box}
+#header h1 a {font-size: 24px;font-family: 'Play', sans-serif;line-height: 60px;font-weight: 700;color: rgba(255,255,255,0.7)}
+#header h1 a span {color: #41c1c1;}
+
+@media only screen and (min-width: 1220px){
+    #header .header-wrap {width: 1200px;margin: 0 auto}
+    #about .about-box {width: 1200px}
+    #career .career-wrap {width: 1200px;margin: 0 auto}
+    #porfolio {width: 1200px;margin: 0 auto}
+}
+@media only screen and (min-width: 768px){
+    #header h1 {float: left}
+    #nav {float: right}
+    #nav .navigation li {display: inline-block;position: relative;margin-left: 40px;vertical-align: middle}
+    #nav .navigation li:first-child {margin-left: 0}
+    #nav .navigation li:before {content: "";position: absolute;left: 0;bottom: 0;width: 100%;height: 4px;background: #41c1c1;transition: all .1s linear;transform: scaleX(0)}
+    #nav .navigation li:hover:before {transform: scaleX(1)}
+    #nav .navigation li a {font-size: 20px;font-family: 'Play', sans-serif;color: rgba(255,255,255,0.7);font-weight: 400;line-height: 60px}
+}
+
+/* container */
+#container h3 {font-size: 50px;font-family: 'Play', sans-serif;color: #333;font-weight: 600;line-height: 1}
+
+/* main */
+#visual {padding-top: 25%;padding-bottom: 5%;background: url("../images/bg_profile.jpg") center top/100% no-repeat;background-attachment: fixed}
+
+/* about */
+#about {position: relative;width: 100%;padding-top: 150px}
+#about .about-box {margin: 0 auto;padding: 60px;background: #fff;border: 1px solid #ddd}
+#about .about-box h3 {margin-bottom: 40px}
+#about .about-box .left-area {float: left;width: 45%}
+#about .about-box .left-area h4 {margin-bottom: 10px;font-size: 36px;font-weight: 500;color: #333;line-height: 1}
+#about .about-box .left-area p {margin-bottom: 30px;color: #999;font-weight: 400}
+#about .about-box .left-area .intro-txt {width: 93%;font-size: 16px;}
+#about .about-box .right-area {float: right;padding-left: 5%;width: 55%;}
+#about .about-box:after {content: "";display: block;clear: both}
+#about .about-tab {border-bottom: 1px solid #ddd;font-size: 0;line-height: 0}
+#about .about-tab li {position: relative;display: inline-block;margin-left: 25px;font-size: 20px;color: #555;line-height: 40px;cursor: pointer}
+#about .about-tab li:first-child {margin-left: 0}
+#about .about-tab li.active {position: relative;color: #333}
+#about .about-tab li.active:before {content: "";position: absolute;left: 0;bottom: -1px;width: 100%;height: 4px;background: #41c1c1}
+#about .about-con {display: none;margin-top: 40px}
+#about .about-con.active {display: block}
+
+
+/* career */
+#career {padding: 100px 20px;background: url("../images/bg_career.jpg") 25% center/cover no-repeat;background-attachment: fixed}
+#career:after {content: "";display: block;clear: both}
+#career .career-box {float: right;padding: 60px;width: 55%;background: #fff}
+#career h3 {margin-bottom: 50px}
+#career .career-tab {border-bottom: 1px solid #ddd}
+#career .career-tab li {position: relative;display: inline-block;margin-left: 25px;font-size: 20px;color: #555;line-height: 40px;cursor: pointer}
+#career .career-tab li:first-child {margin-left: 0}
+#career .career-tab li.active {color: #333}
+#career .career-con {display: none;margin-top: 40px}
+#career .career-con.active {display: block}
+
+/* portfolio */
+#porfolio {padding: 150px 0}
+#porfolio h3 {margin-bottom: 80px;text-align: center}
+#porfolio .portfolio-list {position: relative}
+#porfolio .portfolio-list .item {margin: 0 20px}
+#porfolio .page-item:first-child {margin-bottom: 30px}
+#porfolio .page-item .img-frame {overflow: hidden;position: relative;width: 100%;height: 250px;border: 1px solid #eee}
+#porfolio .page-item .caption {position: absolute;left: 0;top: 0;width: 100%;height: 100%;padding: 38px 20px;background: rgba(0,0,0,0.8);text-align: center;color: #fff;opacity: 0;transition: all 0.5s ease}
+#porfolio .page-item:hover .caption {opacity: 1}
+#porfolio .page-item .caption .tit {font-size: 25px;font-weight: 400}
+#porfolio .page-item .caption .icon-list {margin: 20px 0}
+#porfolio .page-item .caption .icon-list li {display: inline-block;margin-left: 10px}
+#porfolio .page-item .caption .icon-list li:first-child {margin-left: 0}
+#porfolio .page-item .caption .more-btn {display: block;width: 70%;height: 40px;margin: 0 auto;border: 1px solid #fff;font-size: 16px;text-align: center
+;line-height: 38px;color: #fff;transition: all 0.5s ease }
+#porfolio .page-item .page-tit {margin-top: 10px;font-size: 20px;text-align: center;font-weight: 500;color: #333}
+#porfolio .detail-wrap {display: none;position: fixed;left: 0;top: 0;z-index: 99;padding: 20px;width: 100%;height: 100%}
+#porfolio .detail-bg {position: absolute;left: 0;top: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.8)}
+#porfolio .detail-pop {position: relative;margin: 0 auto;padding: 80px 0 50px 50px;width: 100%;height: 100%;max-width: 800px;background: #fff;border-radius: 10px;overflow: hidden}
+#porfolio .detail-pop-scroll {padding-right: 50px;height: 100%;overflow: scroll;overflow-x: hidden}
+#porfolio .detail-pop-scroll .info-area {position: relative;margin-bottom: 50px;padding-bottom: 50px;border-bottom: 1px solid #ddd}
+#porfolio .pop-close {position: absolute;right: 30px;top: 30px;z-index: 100;width: 30px;height: 23px;cursor: pointer}
+#porfolio .pop-close span {display: block;position: absolute;left: 50%;margin-left: -15px;width: 30px;height: 3px;background: #555}
+#porfolio .pop-close span:nth-child(1) {top: 50%;transform: rotate(45deg)}
+#porfolio .pop-close span:nth-child(2) {top: 50%;transform: rotate(-45deg)}
+#porfolio .owl-dots {position: absolute;left: 0;top: -40px;right: 0;margin: auto;text-align: center;line-height: 0;font-size: 0}
+#porfolio .owl-dots button.owl-dot {display: inline-block;margin: 0 5px;width: 15px;height: 15px;background: #bbb;border-radius: 8px}
+#porfolio .owl-dots button.owl-dot.active {width: 30px;background: #41c1c1}
+#porfolio .info-area .icon-list {position: absolute;right: 0;top: 10px;}
+#porfolio .info-area .icon-list ul li {display: inline-block;padding: 5px;width: 50px;height: 50px;border: 2px solid #41c1c1;border-radius: 50%;
+font-size: 16px;color: #41c1c1;line-height: 37px;text-align: center}
+#porfolio .info-area .icon-list ul li.active {background:#41c1c1;color: #fff}
+#porfolio .info-area .info-table {margin-top: 30px;border-top: 1px solid #41c1c1}
+#porfolio .info-area .info-table th {padding: 10px 15px;background: rgba(77,128,153,0.05);border-bottom: 1px solid #e6e9ea;font-size: 16px;color: #94979c}
+#porfolio .info-area .info-table td {padding: 10px 15px;border-bottom: 1px solid #e6e9ea;font-size: 16px;}
+#porfolio .detail-pop-scroll .img-area img {max-width: 100%}
+
+/* footer */
+#footer {padding: 40px 0;text-align: center;background: #121826}
+
+
+/* media query */
+@media only screen and (max-width: 1220px){
+    #about {padding-top: 100px}
+    #about .about-box {width: calc(100% - 80px)}
+}
+@media only screen and (max-width: 768px){
+    #header .nav-btn {display: block;position: absolute;right: 20px;top: 18px;z-index: 999;width: 30px;height: 23px;cursor: pointer}
+    #header .nav-btn span {display: block;position: absolute;left: 50%;width: 30px;height: 3px;margin-left: -15px;background: #41c1c1;transition: all .2s linear}
+    #header .nav-btn span:nth-child(1) {top: 0}
+    #header .nav-btn span:nth-child(2) {top: 10px}
+    #header .nav-btn span:nth-child(3) {top: 20px}
+    #nav {position: fixed;left: 0;top: -100%;z-index: 10000;padding: 65px 0 20px;width: 100%;background: #fff}
+    #nav .navigation li a {display: block;padding: 0 30px;width: 100%;font-size: 18px;color: #000;font-weight: 500;font-family: 'play', sans-serif;text-align: center;line-height: 43px}
+
+    #container h3 {font-size: 35px;}
+
+    #about .about-box {padding: 30px;width: calc(100% - 40px)}
+    #about .about-box h3 {margin-bottom: 30px;text-align: center}
+    #about .about-box .left-area {float: none;width: 100%;text-align: center}
+    #about .about-box .left-area h4 {margin-bottom: 5px;font-size: 30px}
+    #about .about-box .left-area p {margin-bottom: 15px;font-size: 14px}
+    #about .about-box .left-area .intro-txt {width: 90%;margin: 0 auto;font-size: 14px}
+    #about .about-box .right-area {float: none;padding: 20px 0 0;margin-top: 20px;width: 100%;}
+    #about .about-tab li {font-size: 18px;line-height: 35px}
+    #about .about-con {margin-top: 20px}
+
+    .info-table th, .info-table td {padding-top: 15px;font-size: 14px}
+
+    #porfolio {padding: 100px 20px}
+    #porfolio .detail-pop {padding: 50px 0 25px 25px}
+    #porfolio .detail-pop-scroll .info-area .link {font-size: 14px}
+    #porfolio .info-area .info-table th {padding: 10px;font-size: 14px}
+    #porfolio .info-area .info-table td {padding: 10px;font-size: 14px}
+    #porfolio .info-area .icon-list ul li {width: 40px;height: 40px;font-size: 13px;line-height: 27px}
+}
