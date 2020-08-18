@@ -61,7 +61,7 @@ em{font-style:normal}
 #container h3 {font-size: 50px;font-family: 'Play', sans-serif;color: #333;font-weight: 600;line-height: 1}
 
 /* about */
-#about {position: relative;width: 100%;padding-top: 20%;padding-bottom: 5%;background: url("../images/bg_profile.jpg") center top/100% no-repeat;background-attachment: fixed}
+#about {position: relative;width: 100%;padding-top: 20%;padding-bottom: 5%;background: url("../images/bg_profile.jpg") center top/100% no-repeat;}
 #about .about-box {margin: 0 auto;padding: 60px;background: #fff;border: 1px solid #ddd}
 #about .about-box h3 {margin-bottom: 40px}
 #about .about-box .left-area {float: left;width: 45%}
