@@ -26,6 +26,7 @@ hr{display:none}
 abbr,acronym{border:0 none} 
 abbr[title], dfn[title] {border-bottom:1px dotted #000000;cursor: help}
 em{font-style:normal}
+img {max-width: 100%;}
 
 /* Common */
 .hidden{width:0; height:0; margin:0; padding:0; text-indent:-9999em; overflow:hidden; line-height:0; font-size:0;}
@@ -96,7 +97,7 @@ em{font-style:normal}
 #porfolio h3 {margin-bottom: 80px;text-align: center}
 #porfolio .portfolio-list {position: relative}
 #porfolio .portfolio-list .item {margin: 0 20px}
-#porfolio .page-item:first-child {margin-bottom: 30px}
+#porfolio .page-item {margin-bottom: 30px}
 #porfolio .page-item .img-frame {overflow: hidden;position: relative;width: 100%;height: 250px;border: 1px solid #eee}
 #porfolio .page-item .caption {position: absolute;left: 0;top: 0;width: 100%;height: 100%;padding: 38px 20px;background: rgba(0,0,0,0.8);text-align: center;color: #fff;opacity: 0;transition: all 0.5s ease}
 #porfolio .page-item:hover .caption {opacity: 1}
