@@ -43,10 +43,10 @@ img {max-width: 100%;}
 #header h1 a span {color: #41c1c1;}
 
 @media only screen and (min-width: 1220px){
-    #header .header-wrap {width: 1200px;margin: 0 auto}
-    #about .about-box {width: 1200px}
-    #career .career-wrap {width: 1200px;margin: 0 auto}
-    #porfolio {width: 1200px;margin: 0 auto}
+    #header .header-wrap,
+    #about .about-box,
+    #career .career-wrap,
+    #porfolio .portfolio-list {max-width: 1200px;margin: 0 auto}
 }
 @media only screen and (min-width: 768px){
     #header h1 {float: left}
@@ -132,3 +132,10 @@ font-size: 16px;color: #41c1c1;line-height: 37px;text-align: center}
 
 /* footer */
 #footer {padding: 40px 0;text-align: center;background: #121826}
+
+@media only screen and (max-width: 1220px){
+	#header .header-wrap,
+  #about .about-box,
+  #career .career-wrap,
+  #porfolio .portfolio-list {width: 96%}
+}
