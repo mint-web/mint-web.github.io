@@ -20,7 +20,7 @@
 		//menu scroll
 		var secLocation = [];
 		secLocation[0] = $('#about').offset().top;
-		secLocation[1] = $('#porfolio').offset().top;
+		secLocation[1] = $('#works').offset().top;
 
 		var menuNum = 0;
 
